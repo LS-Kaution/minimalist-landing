@@ -5,6 +5,7 @@
 :root {
     --img-perfil-border-color: rgba(66,54,54,0.529);
     --icons-and-font-color: #423636;
+    --hover-button-color: #9CA5FF;
 }
 
 * {
@@ -80,10 +81,11 @@ main section h2 {
 }
 
 main ul {
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 main button {
@@ -94,6 +96,11 @@ main button {
     width: 15rem;
     border: solid var(--icons-and-font-color) 0.3rem; 
     border-radius: 3rem;
+    transition: 1s;
+}
+
+main button:hover {
+    transform: scale(1.1);
 }
 
 main a {
