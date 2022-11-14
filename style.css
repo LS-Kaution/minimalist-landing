@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&display=swap');
+
+:root {
+    --img-perfil-border-color: rgba(66,54,54,0.529);
+    --icons-and-font-color: #423636;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(), linear-gradient(45deg, #F2F0EB 54%, #86C0D9 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main figure {
+    height: 37.613rem;
+    width: 37.613rem;
+}
+
+main figure img {
+    height: 37.013rem;
+    width: 37.013rem;
+    border: solid var(--img-perfil-border-color) 0.3rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 34.8rem;
+    width: 63rem;
+    padding: 0 0 0 5.2rem;
+}
+
+main section h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 5.6rem;
+    font-style: normal;
+    line-height: 1.125;
+    font-weight: 400;
+    color: var(--icons-and-font-color);
+}
+
+main section h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--icons-and-font-color);
+}
+
+main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    width: 15rem;
+    border: solid var(--icons-and-font-color) 0.3rem; 
+    border-radius: 3rem;
+}
+
+main a {
+    color: black;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: normal;
+    line-height: 5.4rem;
+    font-weight: 300;
+}
+
+.svg {
+    margin-left: 0.8rem;
+    text-align: center;
+    height: 2rem;
+    width: 2rem;
+    fill: var(--icons-and-font-color);
+}
