@@ -2,10 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&display=swap');
 
+@import url(keyframes.css);
+
 :root {
-    --img-perfil-border-color: rgba(66,54,54,0.529);
+    --img-perfil-border-color: rgba(66, 54, 54, 0.529);
     --icons-and-font-color: #423636;
-    --hover-button-color: #9CA5FF;
+    --hover-button-discord: #9CA5FF;
+    --hover-button-tiktok: #FF5C5C;
+    --hover-button-twitter: rgba(76, 189, 224, 0.769);
+    --hover-button-twitch: #9361FF;
+    --hover-button-patreon: #FA7C34;
+    --hover-button-instagram: #5A4DF7;
+    --hover-button-coaching: #C89B3C;
 }
 
 * {
@@ -26,7 +34,7 @@ html {
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(), linear-gradient(45deg, #F2F0EB 54%, #86C0D9 100%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,6 +59,7 @@ main figure img {
     border: solid var(--img-perfil-border-color) 0.3rem;
     padding: 1rem;
     border-radius: 50%;
+    animation: slide 1s ease;
 }
 
 main section {
@@ -88,29 +97,27 @@ main ul {
     gap: 2rem;
 }
 
-main button {
+a {
+    height: 5.5rem;
+    width: 15rem;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5.5rem;
-    width: 15rem;
-    border: solid var(--icons-and-font-color) 0.3rem; 
+    border: solid var(--icons-and-font-color) 0.3rem;
     border-radius: 3rem;
-    transition: 1s;
-}
-
-main button:hover {
-    transform: scale(1.1);
-}
-
-main a {
     color: black;
     font-family: 'Fraunces', serif;
-    text-align: center;
     font-size: 1.7rem;
     font-style: normal;
     line-height: 5.4rem;
     font-weight: 300;
+    transition: 0.2s;
+}
+
+a:hover {
+    transition: 0.2s;
+    transform: scale(1.07);
 }
 
 .svg {
@@ -118,5 +125,69 @@ main a {
     text-align: center;
     height: 2rem;
     width: 2rem;
-    fill: var(--icons-and-font-color);
+    fill: var(--icons-and-font-color) !important;
+    transition: 0.2s;
+}
+
+.b1:hover {
+    color: var(--hover-button-discord);
+    border-color: var(--hover-button-discord);
+}
+
+.b1:hover svg {
+    fill: var(--hover-button-discord) !important;
+}
+
+.b2:hover {
+    color: var(--hover-button-tiktok);
+    border-color: var(--hover-button-tiktok);
+}
+
+.b2:hover svg {
+    fill: var(--hover-button-tiktok) !important;
+}
+
+.b3:hover {
+    color: var(--hover-button-twitter);
+    border-color: var(--hover-button-twitter);
+}
+
+.b3:hover svg {
+    fill: var(--hover-button-twitter) !important;
+}
+
+.b4:hover {
+    color: var(--hover-button-twitch);
+    border-color: var(--hover-button-twitch);
+}
+
+.b4:hover svg {
+    fill: var(--hover-button-twitch) !important;
+}
+
+.b5:hover {
+    color: var(--hover-button-patreon);
+    border-color: var(--hover-button-patreon);
+}
+
+.b5:hover svg {
+    fill: var(--hover-button-patreon) !important;
+}
+
+.b6:hover {
+    color: var(--hover-button-instagram);
+    border-color: var(--hover-button-instagram);
+}
+
+.b6:hover svg {
+    fill: var(--hover-button-instagram) !important;
+}
+
+.b7:hover {
+    color: var(--hover-button-coaching);
+    border-color: var(--hover-button-coaching);
+}
+
+.b7:hover svg {
+    fill: var(--hover-button-coaching) !important;
 }
